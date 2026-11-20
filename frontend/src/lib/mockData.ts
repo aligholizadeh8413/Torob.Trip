@@ -1,10 +1,10 @@
 import { Destination, Flight } from './types';
 
 export const destinations: Destination[] = [
-  { name: 'تهران', city: 'تهران، ایران', image: '/images/destinations/tehran.jpeg', description: 'شهر پرانرژی و مدرن ایران', color: '#244c91' },
-  { name: 'مشهد', city: 'مشهد، ایران', image: '/images/destinations/mashhad.jpeg', description: 'سفر آرام به قلب خراسان', color: '#6558a6' },
-  { name: 'شیراز', city: 'شیراز، ایران', image: '/images/destinations/shiraz.jpeg', description: 'عطر بهار و تاریخ در یک شهر', color: '#c56c4a' },
-  { name: 'اصفهان', city: 'اصفهان، ایران', image: '/images/destinations/isfahan.jpeg', description: 'هنر، معماری و زاینده‌رود', color: '#308f8c' }
+  { name: 'تهران', city: 'تهران، ایران', image: '/images/destinations/tehran.webp', description: 'شهر پرانرژی و مدرن ایران', color: '#244c91' },
+  { name: 'مشهد', city: 'مشهد، ایران', image: '/images/destinations/mashhad.webp', description: 'سفر آرام به قلب خراسان', color: '#6558a6' },
+  { name: 'شیراز', city: 'شیراز، ایران', image: '/images/destinations/shiraz.webp', description: 'عطر بهار و تاریخ در یک شهر', color: '#c56c4a' },
+  { name: 'اصفهان', city: 'اصفهان، ایران', image: '/images/destinations/isfahan.webp', description: 'هنر، معماری و زاینده‌رود', color: '#308f8c' }
 ];
 
 export const flights: Flight[] = [
