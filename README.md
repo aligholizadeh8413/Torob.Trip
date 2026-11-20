@@ -44,17 +44,6 @@ This repository currently contains an **interactive frontend demo** backed by lo
 > [!IMPORTANT]
 > **Demo data only.** Flight prices, schedules, and availability are illustrative. Torob Trip currently does **not** retrieve live inventory, verify checkout prices, process bookings, or offer a working AI recommendation engine.
 
-### Destinations
-
-<table>
-  <tr>
-    <td width="25%" align="center"><img src="frontend/public/images/destinations/tehran.webp" alt="Tehran" width="100%"><br><strong>Tehran</strong></td>
-    <td width="25%" align="center"><img src="frontend/public/images/destinations/mashhad.webp" alt="Mashhad" width="100%"><br><strong>Mashhad</strong></td>
-    <td width="25%" align="center"><img src="frontend/public/images/destinations/shiraz.webp" alt="Shiraz" width="100%"><br><strong>Shiraz</strong></td>
-    <td width="25%" align="center"><img src="frontend/public/images/destinations/isfahan.webp" alt="Isfahan" width="100%"><br><strong>Isfahan</strong></td>
-  </tr>
-</table>
-
 ## Tech stack
 
 | Layer | Technology |
