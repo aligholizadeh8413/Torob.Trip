@@ -53,7 +53,7 @@ This repository currently contains an **interactive frontend demo** backed by lo
 | Icons | Lucide React (SVG) |
 | Backend | Python 3.12, Django 5.1, Django REST Framework |
 | Data infrastructure | PostgreSQL 16, Redis 7 |
-| Container setup | Docker Compose, frontend/backend Dockerfiles; Nginx service declared |
+| Container setup | Docker Compose and dedicated frontend/backend Dockerfiles |
 
 The app intentionally uses a **small, understandable repository structure** rather than an elaborate monorepo or premature microservices.
 
@@ -100,7 +100,7 @@ Expected response:
 ```
 
 > [!WARNING]
-> **The complete Docker Compose stack is not yet ready for one-command startup.** The Compose file references `nginx/nginx.conf`, but that configuration file is missing from the current repository. The frontend and backend also lack `.dockerignore` files. The command above starts only the named backend-related services; full-stack Nginx routing still needs configuration. These startup commands are based on the repository configuration and have not been verified by a fresh end-to-end build in this review.
+> **Container startup has not been verified in a fresh end-to-end build.** Docker Compose exposes the frontend directly at `http://localhost:3000` and the Django API at `http://localhost:8000`. The frontend and backend do not yet have `.dockerignore` files, so the Docker build contexts can be improved. The command above starts only the named backend-related services.
 
 ## Repository structure
 
@@ -137,7 +137,7 @@ This is a **work-in-progress demo**, not a live booking system:
 - The comparison bar supports selection, but the full comparison view has not been connected.
 - Destination search and some navigation/actions remain presentational.
 - The backend is a health-check scaffold; there are no live search, supplier, or booking APIs.
-- Docker/Nginx configuration and development secrets still need cleanup before deployment.
+- Docker build contexts and development secrets still need cleanup before deployment.
 
 ## Roadmap
 
@@ -147,7 +147,7 @@ This is a **work-in-progress demo**, not a live booking system:
 - [ ] Connect the frontend to Django APIs and persistent PostgreSQL models.
 - [ ] Integrate authorized, verifiable data sources with clear provenance and freshness.
 - [ ] Explore explainable, preference-aware recommendations across complete trip options.
-- [ ] Finish Docker/Nginx configuration and harden environment settings.
+- [ ] Improve Docker build isolation and harden environment settings.
 
 ## Project context
 
